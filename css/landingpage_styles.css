@@ -1,6 +1,8 @@
-/* Landing Page - Welcome back message */
-#welcomeback {
+/* Landing Page - Welcome back message font family */
+#welcomebacktext {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 110px;
+    color: red;
 }
 
 /* Landing Page - Buy and Sell Game Controller Buttons */
@@ -34,7 +36,7 @@
 }
 
 /* Landing Page - Sell Button */
-  .controllerbuttons .sellbutton {
+.controllerbuttons .sellbutton {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,9 +50,4 @@
     border-radius: 5px;
     text-align: center;
     background-color: transparent;
-}
-
-/* Media Queries */ 
-/* Landing Page - Extra small devices (phones, 600px and down) */
-#welcomeback {font-size: 35px;}
 }

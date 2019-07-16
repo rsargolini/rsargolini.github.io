@@ -1,6 +1,7 @@
 /* Media Queries */ 
 /* Selling Page - Extra small devices (phones, 600px and down) */
+/* Hide button text and resize table font size */
 @media only screen and (max-width: 600px) {
-.buttontext {display: none;}
-.table {font-size: 12px;}
+    .buttontext {display: none;}
+    .table {font-size: 12px;}
 }

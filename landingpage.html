@@ -48,18 +48,25 @@
     </nav>
 
     <main>
-
-        <div class="container text-center col-12" id="titlecontainer">
+        <header class="container text-center col-12" id="titlecontainer">
             <h1 class="display-2" id="siteheader">Brody's Retro Games</h1>
-        </div>
+        </header>
 
-        <div class="container controllerbuttons">
-             <img src="img/landingcontroller.png" alt="Controller Buttons">
+        <!-- Subtext Section -->
+        <section class="row" id="welcomebacktext">
+            <h2 class="col-12 text-center"><strong>Welcome Back - Select Buy or Sell</strong></h2>
+        </section>
+
+        <!-- Image and Controller Buttons Navigation Section -->
+        <section class="container controllerbuttons">
+            <img src="img/landingcontroller.png" alt="Controller Buttons">
             <a class="btn btn-sm buybutton" href="buyingpage.html" role="button">Buy</a>
             <a class="btn btn-sm sellbutton" href="sellingpage.html" role="button">Sell</a>
-        </div>
+        </section>
 
-        <div class="d-flex justify-content-center container mt-5">
+        <!-- Gaming Consoles Image Carousel Section -->
+        <section>
+            <div class="d-flex justify-content-center container mt-5">
                 <div class="row">
                     <div class="carousel slide" id="landingpagecarousel" data-ride="carousel">
                         <div class="carousel-inner">
@@ -88,13 +95,18 @@
                     </div>
                 </div>
             </div>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="container">
         <hr>
         <div class="row">
-            <div class="col">
-                &copy; Brodys Retro Games, inc. 2019
+            <div class="col" id="copyright">
+                &copy; Brodys Retro Games, Inc. 2019
+            </div>
+            <div class="col text-right" id="imagescredit">
+                Images provide by <a href="https://www.wikipedia.org/">Wikipedia</a>
             </div>
         </div>
     </footer>

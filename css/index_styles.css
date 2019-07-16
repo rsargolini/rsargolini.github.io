@@ -1,29 +1,37 @@
-/* Index Page - Images */
-#homepageimagelg, #homepageimagesm {
+/* Index Page - Rounded corners on images */
+#indexpageimagelg, #indexpageimagesm {
     border-radius: 25px;
 }
-#homepageimagesm {
+/* Small image and mario image initially not displayed */
+#indexpageimagesm, #indexpageimagemario {
     display: none;
 }
 
-/* Index Page - Main Quote */
-#homepagequote {
+/* Index Page - Main Quote font size */
+#indexpagequote {
     font-size: 40px;
 }
 
 /* Media Queries */ 
 /* Index Page - Extra small devices (phones, 600px and down) */
+/* Hide large and small images, display mario image and resize quote, credit and copyright font size */
 @media only screen and (max-width: 600px) {
-    #homepageimagelg, #homepageimagesm {display: none;}
+    #indexpageimagelg, #indexpageimagesm {display: none;}
+    #indexpageimagemario {display: inline;}
+    #indexpagequote {font-size: 30px;}
 }
+
 /* Index Page - Small devices (portrait tablets and large phones, 600px and up) */
+/* Hide large image and display smaller image */
 @media only screen and (min-width: 600px) {
-    #homepageimagelg {display: none;}
-    #homepageimagesm {display: inline;}
+    #indexpageimagelg {display: none;}
+    #indexpageimagesm {display: inline;}
+
 }
 
 /* Index Page - Medium devices (landscape tablets, 768px and up) */
+/* Hide small image and display large image */
 @media only screen and (min-width: 768px) {
-    #homepageimagelg {display: inline;}
-    #homepageimagesm {display: none;}
+    #indexpageimagelg {display: inline;}
+    #indexpageimagesm {display: none;}
 } 

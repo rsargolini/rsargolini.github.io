@@ -29,8 +29,9 @@ hr {
 /* Media Queries */ 
 /* All Pages - Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-#imagescredit {display: none;}
-#siteheader {font-size: 40px; margin-top: 6%}
+    #siteheader {font-size: 40px; margin-top: 6%}
+    #copyright {font-size: 12px;}
+    #imagescredit {font-size: 12px;}
 }
 
 /* All Pages - Small devices (portrait tablets and large phones, 600px and up) */
@@ -38,8 +39,15 @@ hr {
     #siteheader {font-size: 60px;}
 }
 
+/* Index Page - Small devices (portrait tablets and large phones, 600px and up) */
+/* Resize font size for copyright and credits */
+@media only screen and (max-width: 768px) {
+    #copyright {font-size: 12px;}
+    #imagescredit {font-size: 12px;}
+}
+
 /* All Pages - Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 993px) {
-#siteheader {font-size: 90px;}
+    #siteheader {font-size: 90px;}
 } 
 

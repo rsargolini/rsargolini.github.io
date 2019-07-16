@@ -45,101 +45,108 @@
     </nav>
 
     <main>
-
-        <div class="container text-center col-12" id="titlecontainer">
+        <header class="container text-center col-12" id="titlecontainer">
             <h1 class="display-2" id="siteheader">Brody's Retro Games</h1>
-        </div>
+        </header>
 
-        <div class="d-flex justify-content-center align-items-center container">
-            <form name="loginform" action="login.html" method="POST">
-                <div class="form-row">
-                    <div id="requiredfields" class="form-group col"><strong>Required fields &#42;</strong></div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="inputFName" class="alllabels">First Name &#42;</label>
-                        <input type="text" class="form-control" id="inputFName" placeholder="Enter First name" required
-                            autofocus>
+        <!-- Registration Form Section -->
+        <section>
+            <div class="d-flex justify-content-center align-items-center container">
+                <!-- <form name="loginform" action="login.html" method="POST"> -->
+                <form name="loginform" action="login.html" method="GET">
+                    <div class="form-row">
+                        <div id="requiredfields" class="form-group col text-danger font-weight-bold">Required fields &#42;</div>
                     </div>
-                    <div class="form-group col">
-                        <label for="inputLName" class="alllabels">Last Name &#42;</label>
-                        <input type="text" class="form-control" id="inputLName" placeholder="Enter Last name" required>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="inputFName" class="alllabels">First Name &#42;</label>
+                            <input type="text" class="form-control" id="inputFName" placeholder="Enter First name"
+                                required autofocus>
+                        </div>
+                        <div class="form-group col">
+                            <label for="inputLName" class="alllabels">Last Name &#42;</label>
+                            <input type="text" class="form-control" id="inputLName" placeholder="Enter Last name"
+                                required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail" class="alllabels">Email Address &#42;</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="inputPassword" class="alllabels">Password &#42;</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
-                            minlength="8" maxlength="15" required>
+                    <div class="form-group">
+                        <label for="inputEmail" class="alllabels">Email Address &#42;</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address"
+                            required>
                     </div>
-                    <div class="form-group col">
-                        <label for="confirmPassword" class="alllabels">Confirm Password &#42;</label>
-                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password"
-                            minlength="8" maxlength="15" required>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="inputPassword" class="alllabels">Password &#42;</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
+                                minlength="8" maxlength="15" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="confirmPassword" class="alllabels">Confirm Password &#42;</label>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="Re-enter Password" minlength="8" maxlength="15" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress" class="alllabels">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity" class="alllabels">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    <div class="form-group">
+                        <label for="inputAddress" class="alllabels">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="selectState" class="alllabels">State</label>
-                        <select id="selectState" class="form-control">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="alllabels">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="selectState" class="alllabels">State</label>
+                            <select id="selectState" class="form-control">
+                                <option selected>Select...</option>
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                                <option>Arkansas</option>
+                                <option>California</option>
+                                <option>Colorado</option>
+                                <option>Connecticut</option>
+                                <option>Delaware</option>
+                                <option>Florida</option>
+                                <option>Georgia</option>
+                                <option>Hawaii</option>
+                                <option>Idaho</option>
+                                <option>Illinois</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip" class="alllabels">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" maxlength="5">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="hearabout" class="alllabels">How Did You Hear About Us?</label>
+                        <select id="hearabout" class="form-control">
                             <option selected>Select...</option>
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option>Arizona</option>
-                            <option>Arkansas</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                            <option>Connecticut</option>
-                            <option>Delaware</option>
-                            <option>Florida</option>
-                            <option>Georgia</option>
-                            <option>Hawaii</option>
-                            <option>Idaho</option>
-                            <option>Illinois</option>
+                            <option>Google</option>
+                            <option>Facebook</option>
+                            <option>Twitter</option>
+                            <option>Friend</option>
+                            <option>Other</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip" class="alllabels">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" maxlength="5">
+                    <!-- Registration Form Buttons -->
+                    <div class="form-group text-center pt-3">
+                        <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                        <a class="btn btn-secondary btn-lg" href="index.html" role="button">Cancel</a>
+                        <button type="reset" class="btn btn-danger btn-lg">Reset</button>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="hearabout" class="alllabels">How Did You Hear About Us?</label>
-                    <select id="hearabout" class="form-control">
-                        <option selected>Select...</option>
-                        <option>Google</option>
-                        <option>Facebook</option>
-                        <option>Twitter</option>
-                        <option>Friend</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group text-center pt-3">
-                    <button type="submit" class="btn btn-success btn-lg">Submit</button>
-                    <a class="btn btn-secondary btn-lg" href="index.html" role="button">Cancel</a>
-                    <button type="reset" class="btn btn-danger btn-lg">Reset</button>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="container">
         <hr>
         <div class="row">
-            <div class="col">
-                &copy; Brodys Retro Games, inc. 2019
+            <div class="col" id="copyright">
+                &copy; Brodys Retro Games, Inc. 2019
             </div>
         </div>
     </footer>
