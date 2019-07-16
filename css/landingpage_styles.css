@@ -1,0 +1,56 @@
+/* Landing Page - Welcome back message */
+#welcomeback {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Landing Page - Buy and Sell Game Controller Buttons */
+.controllerbuttons {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Landing Page - Game Controller Image */
+.controllerbuttons img {
+    width: 100%;
+    height: auto;
+}
+
+/* Landing Page - Buy Button */
+.controllerbuttons .buybutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -25%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* Landing Page - Sell Button */
+  .controllerbuttons .sellbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -25%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* Media Queries */ 
+/* Landing Page - Extra small devices (phones, 600px and down) */
+#welcomeback {font-size: 35px;}
+}

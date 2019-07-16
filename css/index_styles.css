@@ -1,0 +1,29 @@
+/* Index Page - Images */
+#homepageimagelg, #homepageimagesm {
+    border-radius: 25px;
+}
+#homepageimagesm {
+    display: none;
+}
+
+/* Index Page - Main Quote */
+#homepagequote {
+    font-size: 40px;
+}
+
+/* Media Queries */ 
+/* Index Page - Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #homepageimagelg, #homepageimagesm {display: none;}
+}
+/* Index Page - Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #homepageimagelg {display: none;}
+    #homepageimagesm {display: inline;}
+}
+
+/* Index Page - Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #homepageimagelg {display: inline;}
+    #homepageimagesm {display: none;}
+} 

@@ -1,0 +1,45 @@
+/* All Pages - Website Title */
+h1  {
+    color: blue;
+    font-family: "Impact", Charcoal, sans-serif;
+    margin-top: 3%;
+    padding: 2rem 1rem;
+}
+
+/* All Pages - Website Title Container */
+#titlecontainer {
+    background-color: lightsteelblue;
+}
+
+/* All Pages - Subtitles */
+#sellinggamestitle, #buyingamestitle, #abouttitle {
+    font-size: 2em;
+}
+
+/* All Pages - Labels */
+.alllabels {
+    font-weight: bold;
+}
+
+/* All Pages - Horizontal Rule */
+hr { 
+    border-width: 3px;
+} 
+
+/* Media Queries */ 
+/* All Pages - Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#imagescredit {display: none;}
+#siteheader {font-size: 40px; margin-top: 6%}
+}
+
+/* All Pages - Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #siteheader {font-size: 60px;}
+}
+
+/* All Pages - Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) {
+#siteheader {font-size: 90px;}
+} 
+

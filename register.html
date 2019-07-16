@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome: https://fontawesome.com/icons?d=gallery&m=free -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/register_styles.css" />
+
+    <link rel="icon" href="img/gamecontroller.png" />
+
+    <title>Brody's Retro Games</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar Section -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="about.html">About</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Cancel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container text-center col-12" id="titlecontainer">
+            <h1 class="display-2" id="siteheader">Brody's Retro Games</h1>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center container">
+            <form name="loginform" action="login.html" method="POST">
+                <div class="form-row">
+                    <div id="requiredfields" class="form-group col"><strong>Required fields &#42;</strong></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="inputFName" class="alllabels">First Name &#42;</label>
+                        <input type="text" class="form-control" id="inputFName" placeholder="Enter First name" required
+                            autofocus>
+                    </div>
+                    <div class="form-group col">
+                        <label for="inputLName" class="alllabels">Last Name &#42;</label>
+                        <input type="text" class="form-control" id="inputLName" placeholder="Enter Last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="alllabels">Email Address &#42;</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="inputPassword" class="alllabels">Password &#42;</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password"
+                            minlength="8" maxlength="15" required>
+                    </div>
+                    <div class="form-group col">
+                        <label for="confirmPassword" class="alllabels">Confirm Password &#42;</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password"
+                            minlength="8" maxlength="15" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress" class="alllabels">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity" class="alllabels">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="selectState" class="alllabels">State</label>
+                        <select id="selectState" class="form-control">
+                            <option selected>Select...</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                            <option>Illinois</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip" class="alllabels">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" maxlength="5">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hearabout" class="alllabels">How Did You Hear About Us?</label>
+                    <select id="hearabout" class="form-control">
+                        <option selected>Select...</option>
+                        <option>Google</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                        <option>Friend</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group text-center pt-3">
+                    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                    <a class="btn btn-secondary btn-lg" href="index.html" role="button">Cancel</a>
+                    <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container">
+        <hr>
+        <div class="row">
+            <div class="col">
+                &copy; Brodys Retro Games, inc. 2019
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
