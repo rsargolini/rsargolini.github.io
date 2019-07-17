@@ -1,0 +1,11 @@
+/* Register Page - Stylessheet */
+
+/* Passsword and Confirm Password Match - Hide Danger Message on page load */
+.hidden {
+    display: none;
+}
+
+/* Enlarge Font Awesome icon for Password - Confirm Password mismatch alert */
+.fa {
+    font-size: 1.5em;
+}

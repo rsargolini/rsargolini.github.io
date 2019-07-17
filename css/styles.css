@@ -12,8 +12,8 @@ h1  {
 }
 
 /* All Pages - Subtitles */
-#sellinggamestitle, #buyingamestitle, #abouttitle {
-    font-size: 2em;
+.subtitles {
+    font-size: 40px;
 }
 
 /* All Pages - Labels */
@@ -39,15 +39,14 @@ hr {
     #siteheader {font-size: 60px;}
 }
 
-/* Index Page - Small devices (portrait tablets and large phones, 600px and up) */
+/* Index Page - Small devices (portrait tablets and large phones, 768px and down) */
 /* Resize font size for copyright and credits */
 @media only screen and (max-width: 768px) {
     #copyright {font-size: 12px;}
     #imagescredit {font-size: 12px;}
 }
 
-/* All Pages - Large devices (laptops/desktops, 992px and up) */
+/* All Pages - Large devices (laptops/desktops, 993px and up) */
 @media only screen and (min-width: 993px) {
     #siteheader {font-size: 90px;}
 } 
-

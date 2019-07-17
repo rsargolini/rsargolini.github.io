@@ -1,24 +1,25 @@
-/* Landing Page - Welcome back message font family */
+/* Landing Page - Stylessheet */
+
+/* Welcome back message font family */
 #welcomebacktext {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 110px;
     color: red;
+    font-size: 30px;
 }
 
-/* Landing Page - Buy and Sell Game Controller Buttons */
+/* Buy and Sell Game Controller Buttons */
 .controllerbuttons {
     position: relative;
     width: 100%;
     max-width: 400px;
 }
 
-/* Landing Page - Game Controller Image */
+/* Game Controller Image */
 .controllerbuttons img {
     width: 100%;
     height: auto;
 }
 
-/* Landing Page - Buy Button */
+/* Buy Button */
 .controllerbuttons .buybutton {
     position: absolute;
     top: 50%;
@@ -35,7 +36,7 @@
     background-color: transparent;
 }
 
-/* Landing Page - Sell Button */
+/* Sell Button */
 .controllerbuttons .sellbutton {
     position: absolute;
     top: 50%;
@@ -50,4 +51,17 @@
     border-radius: 5px;
     text-align: center;
     background-color: transparent;
+}
+
+/* Media Queries */ 
+/* Extra small devices (phones, 600px and down) */
+/* Resize Welcome Back Text font size */
+@media only screen and (max-width: 600px) {
+    #welcomebacktext {font-size: 20px;}
+}
+
+/* Index Page - Small devices (portrait tablets and large phones, between 601px and 992px) */
+/* Resize Welcome Back Text font size */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #welcomebacktext {font-size: 30px;}
 }

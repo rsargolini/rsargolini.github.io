@@ -1,4 +1,6 @@
-/* Index Page - Rounded corners on images */
+/* Index Page - Stylessheet */
+
+/* Rounded corners on images */
 #indexpageimagelg, #indexpageimagesm {
     border-radius: 25px;
 }
@@ -7,31 +9,36 @@
     display: none;
 }
 
-/* Index Page - Main Quote font size */
+/* Main Quote font size */
 #indexpagequote {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 /* Media Queries */ 
-/* Index Page - Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 /* Hide large and small images, display mario image and resize quote, credit and copyright font size */
 @media only screen and (max-width: 600px) {
     #indexpageimagelg, #indexpageimagesm {display: none;}
     #indexpageimagemario {display: inline;}
-    #indexpagequote {font-size: 30px;}
+    #indexpagequote {font-size: 20px;}
 }
 
-/* Index Page - Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 601px and up) */
 /* Hide large image and display smaller image */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #indexpageimagelg {display: none;}
     #indexpageimagesm {display: inline;}
-
 }
 
-/* Index Page - Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
 /* Hide small image and display large image */
 @media only screen and (min-width: 768px) {
     #indexpageimagelg {display: inline;}
     #indexpageimagesm {display: none;}
 } 
+
+/* Index Page - Small devices (portrait tablets and large phones, 992px and down) */
+/* Resize Quote Text font size */
+@media only screen and (max-width: 992px) {
+    #indexpagequote {font-size: 30px;}
+}

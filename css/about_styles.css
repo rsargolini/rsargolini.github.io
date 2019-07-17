@@ -1,10 +1,17 @@
-/* About Page - Lines between paragraphs */
+/* About Page - Stylessheet */
+
+/* Lines between paragraphs */
 .aboutlist li {
     border-bottom: 1px solid black;
 }
 
+/* No Line after last paragraph */
+#lastconsole {
+    border-bottom: none;
+}
+
 /* Media Queries */ 
-/* About Page - Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 /* Hide images, resize font size for content */
 @media only screen and (max-width: 600px) {
     .aboutimages {display: none;}
