@@ -60,7 +60,7 @@
     #welcomebacktext {font-size: 20px;}
 }
 
-/* Index Page - Small devices (portrait tablets and large phones, between 601px and 992px) */
+/* Small devices (portrait tablets and large phones, between 601px and 992px) */
 /* Resize Welcome Back Text font size */
 @media only screen and (min-width: 601px) and (max-width: 992px) {
     #welcomebacktext {font-size: 30px;}

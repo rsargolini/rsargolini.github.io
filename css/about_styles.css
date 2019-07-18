@@ -10,11 +10,24 @@
     border-bottom: none;
 }
 
+/* Initially Hide Card Deck */
+#carddeck {
+    display: none;
+}
+
 /* Media Queries */ 
 /* Extra small devices (phones, 600px and down) */
-/* Hide images, resize font size for content */
+/* Hide images, resize font size for content, hide unordered list and show card deck */
 @media only screen and (max-width: 600px) {
     .aboutimages {display: none;}
-    .aboutcontent {font-size: 12px;}
     #imagescredit {display: none;}
+    #carddeck {display: block;}
+    #unorderedlist {display: none;}
+}
+
+/* Small devices (portrait tablets and large phones, 992px and down) */
+/* Resize All Content Text font size */
+@media only screen and (max-width: 992px) {
+    .aboutcontent {font-size: 12px;}
+    #aboutheader {font-size: 15px;}
 }

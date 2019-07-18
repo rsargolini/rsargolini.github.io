@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <!-- Nav Bar Section -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="about.html">About</a>
@@ -31,7 +30,6 @@
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -51,7 +49,7 @@
 
         <!-- Registration Form Section -->
         <section>
-                <h2 class="col-12 text-center subtitles"><strong>Registration</strong></h2>
+                <h2 class="col-12 text-center subtitles font-weight-bold">Registration</h2>
                 <hr>
             <div class="d-flex justify-content-center container-fluid">
                 <!-- <form id="registrationForm" action="login.html" method="POST"> -->
@@ -126,7 +124,7 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip" class="alllabels">Zip</label>
-                            <input type="text" class="form-control" id="inputZip" maxlength="5">
+                            <input type="text" class="form-control" pattern="[0-9]{5}" title="5 Numeric" id="inputZip" maxlength="5">
                         </div>
                     </div>
                     <div class="form-group">

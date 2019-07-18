@@ -37,7 +37,7 @@
     #indexpageimagesm {display: none;}
 } 
 
-/* Index Page - Small devices (portrait tablets and large phones, 992px and down) */
+/* Small devices (portrait tablets and large phones, 992px and down) */
 /* Resize Quote Text font size */
 @media only screen and (max-width: 992px) {
     #indexpagequote {font-size: 30px;}
