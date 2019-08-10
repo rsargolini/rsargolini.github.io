@@ -1,0 +1,102 @@
+/* All Pages - Website Title */
+h1  {
+    color: steelblue ;
+    font-family: 'Anton', sans-serif;
+    margin-top: 3%;
+    padding: 2rem 1rem;
+}
+
+/* Home Page - Welcome Quote */
+.welcomeQuote {
+    font-size: 20px;
+}
+
+/* Home Page - Main Picture */
+#indexpageimagelg, #outdoorsPic {
+    border-radius: 25px;
+}
+
+/* National Parks Page - Visit Table Column */
+#visitField {
+    text-align: center;
+}
+
+/* Mountains Page - Title Column Bold */
+.titleColumn {
+    font-weight: bold;
+}
+
+/* All Pages - Tables */
+.table {
+    font-size: 13px;
+}
+
+/* All Pages - Table Head */
+thead {
+    background-color: black;
+    color: white;
+}
+
+/* All Pages - Hide Alert boxes */
+.hidden {
+    display: none;
+}
+
+/* All Pages - Website Title Container */
+#titleContainer {
+    background-color: lightblue;
+}
+
+/* All Pages - Subtitles */
+#subtitles {
+    font-size: 40px;
+}
+
+/* All Pages - Labels */
+.allLabels {
+    font-weight: bold;
+}
+
+/* All Pages - Horizontal Rule */
+hr { 
+    border-width: 3px;
+} 
+
+/* All Pages - Description */
+#description {
+    font-size: 14px;
+}
+
+/* All Pages - Input Description Notes */
+#inputDescription {
+    font-size: 11px;
+}
+
+/* Media Queries */ 
+/* All Pages - Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #siteHeader {font-size: 40px; margin-top: 6%}
+    #copyright {font-size: 12px;}
+    #imagescredit {font-size: 12px;}
+    .mountTable {font-size: 12px;}
+    .table {font-size: 10px;}
+    #subtitles {font-size: 30px}
+    .welcomeQuote {font-size: 15px;}
+}
+
+/* All Pages - Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #siteHeader {font-size: 60px;}
+}
+
+/* Index Page - Small devices (portrait tablets and large phones, 768px and down) */
+/* Resize font size for copyright and credits */
+@media only screen and (max-width: 768px) {
+    #copyright {font-size: 12px;}
+    #imagescredit {font-size: 12px;}
+}
+
+/* All Pages - Large devices (laptops/desktops, 993px and up) */
+@media only screen and (min-width: 993px) {
+    #siteHeader {font-size: 80px;}
+} 

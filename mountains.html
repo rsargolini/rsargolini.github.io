@@ -20,7 +20,7 @@
 
     <link rel="icon" href="images/mountains.png" />
 
-    <title>Enjoy the Outdoors</title>
+    <title>Modify Page Content</title>
 </head>
 
 <body>
@@ -36,9 +36,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="nationalparks.html">National Parks</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mountains.html">Mountains</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -49,29 +46,30 @@
 
     <main>
 
-        <!-- Images and Quote Section -->
+        <!-- Select Mountain Section -->
         <section class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 offset-md-3 text-center mb-3">
-                    <q class="welcomeQuote font-italic">Welcome to Enjoy the Outdoors, the best website to search for outdoor activities.</q>
-                </div>
-                <div class="col-md-12 text-center">
-                    <img id="indexpageimagelg" alt="Outdoor Image" class="img-fluid" src="images/outdoors.jpg">
-                    <hr>
+            <h2 class="col-12 text-center font-weight-bold" id="subtitles">Mountains Search</h2>
+            <hr>
+            <div class="form-row d-flex justify-content-center">
+                <div class="form-group">
+                    <label for="selectMountain" class="allLabels mr-3">Select a Mountain:</label>
+                    <select id="selectMountain" autofocus>
+                        <option value="None" selected>Select one</option>
+                    </select>
                 </div>
             </div>
+            <hr>
         </section>
 
-        <!-- Search Links Section -->
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a class="btn btn-primary btn-lg mb-1 active" href="nationalparks.html" role="button">National Parks
-                        Search</a>
-                    <a class="btn btn-primary btn-lg mb-1 active" href="mountains.html" role="button">Mountains
-                        Search</a>
-                </div>
-            </div>
+        <!-- Display Mountain Table Section -->
+        <section class="container-fluid d-flex justify-content-center">
+            <table id="mountains" class="mountTable table-striped table-bordered col-md-6">
+            </table>
+        </section>
+
+        <!-- Display Mountain Picture Section -->
+        <section class="container-fluid d-flex justify-content-center">
+            <img id="outdoorsPic" alt="Mountain Image" class="img-fluid col-md-12" src="images/mountainrange.jpg">
         </section>
 
     </main>
@@ -98,6 +96,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script src="scripts/mountains.js"></script>
 
 </body>
 

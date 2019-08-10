@@ -1,27 +1,17 @@
-# Retro Video Games Buying/Selling Site
+# Enjoy the Outdoors
 
 ## About
 
-This site is for buying and/or selling retro video games. 
+This site is to allow users to search for National Parks or Mountains in order to get information about those parks and/or mountains. 
 
-About page - A user can view page without logging in. Page tells about the site and shows what video game console's game are allowed to be bought and/or sold.
+Home page - Will provide links to National Parks search and Mountains search.
 
-Login page - A user will have the ability to login to access the full website
+National Parks Search page - Will allow user to search for National Parks by Location or by Park Type. They will also have the ability to display all National Parks. The results will be displayed in table format with the following columns (Location Name, Address, Phone Number, Location (Longitude and Latitude) and Visit (Clickable icon will be displayed if Park has a website).
 
-Registration page - If not a registered user, a user will be able to enter there information, in order to register for access.
-
-Landing page - After the user logs in, they will be directed to the successfully logged in landing page, where they will have the ability to navigate to the Buying or Selling pages,
-
-Buying page - A user will have the ability to enter search criteria, in order to search for posted video games for sale and select them for purchase.
-
-Selling page - A user will have the ability to enter information about video games that they would like to post for sale.
-
-The web address will be www.BrodysRetroVideoGames.com.
+Mountains page - Will allow the user to search by Mountain name. The results will be displayed in table format with the following rows (Name, Elevation, Effort, Image, Description, Coordinates (Longitude and Latitude) and current Sunrise/Sunset Times.
 
 ## Audience
-- Primary - Avid retro video game collectors who are looking to buy games to complete there collection. 
-- Secondary - Any gamer who is looking buy, play then sell there retro games.  
+- Primary - Adventurous people who love the outdoors and love to hike.
 
 ### Credits
 - Content provided by [wiki](http://www.wiki.com)
-
