@@ -44,6 +44,27 @@ function insertNewRowImages(body, rowName, images, names)
     rowCell1.appendChild(img);
 }
 
+/* 
+* This function clears the Table body.
+*
+* @param body (HTML Element) - The mountain table body element
+*/
+function clearTable(body)
+{
+    body.innerHTML = "";
+}
+
+/* 
+* This function display or hides Mountain image.
+*
+* @param mountainImage (Image Element) - Mountain image
+* @param imgStatus (String) - "initial" or "none"
+*/
+function displayMountain(mountainImage, imgStatus)
+{
+    mountainImage.style.display = imgStatus;
+}
+
 //Connect Events to HTML Elements
 window.onload = function ()
 {
@@ -72,21 +93,21 @@ window.onload = function ()
 
     let body = table.createTBody();
 
-    let mountainPic = document.getElementById("outdoorsPic");
+    let mountainImage = document.getElementById("outdoorsImg");
 
     // If a Mountain not selected display mountain picture, else display table
     let selectMountainField = document.getElementById("selectMountain");
     selectMountainField.onchange = function ()
     {
-        body.innerHTML = "";
-
+        clearTable(body);
+        
         if (selectMountainField.value == "None")
         {
-            mountainPic.style.display = "block";
+            displayMountain(mountainImage, "initial");
         }
         else
         {
-            mountainPic.style.display = "none";
+            displayMountain(mountainImage, "none");
 
             let selectedMountain = (selectMountainField.selectedIndex - 1);
 
@@ -121,5 +142,14 @@ window.onload = function ()
                     insertNewRow(body, "Sunrise and Sunset:", combineTimes);
                 });
         }
+    }
+
+    // Reset Button clicked
+    resetBtn.onclick = function ()
+    {
+        clearTable(body);
+        displayMountain(mountainImage, "initial");
+
+        selectMountain.value = "None";
     }
 }

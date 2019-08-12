@@ -12,7 +12,7 @@ h1  {
 }
 
 /* Home Page - Main Picture */
-#indexpageimagelg, #outdoorsPic {
+#indexpageimagelg, #outdoorsImg {
     border-radius: 25px;
 }
 
@@ -29,12 +29,6 @@ h1  {
 /* All Pages - Tables */
 .table {
     font-size: 13px;
-}
-
-/* All Pages - Table Head */
-thead {
-    background-color: black;
-    color: white;
 }
 
 /* All Pages - Hide Alert boxes */

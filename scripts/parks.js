@@ -10,22 +10,27 @@ function createHeadRow(table)
     let header = table.createTHead();
     header.className = "thead-dark";
 
-    let headerRow = header.insertRow(0);
+    let headerRow0 = header.insertRow(0);
 
-    let headerCell0 = headerRow.insertCell(0);
+    let headerCell0 = document.createElement("th");
     headerCell0.innerHTML = "Location Name";
+    headerRow0.appendChild(headerCell0);
 
-    let headerCell1 = headerRow.insertCell(1);
+    let headerCell1 = document.createElement("th");
     headerCell1.innerHTML = "Address";
+    headerRow0.appendChild(headerCell1);
 
-    let headerCell2 = headerRow.insertCell(2);
+    let headerCell2 = document.createElement("th");
     headerCell2.innerHTML = "Phone Number";
+    headerRow0.appendChild(headerCell2);
 
-    let headerCell3 = headerRow.insertCell(3);
+    let headerCell3 = document.createElement("th");
     headerCell3.innerHTML = "Location";
+    headerRow0.appendChild(headerCell3);
 
-    let headerCell4 = headerRow.insertCell(4);
+    let headerCell4 = document.createElement("th");
     headerCell4.innerHTML = "Visit";
+    headerRow0.appendChild(headerCell4);
 }
 
 /* 
@@ -93,8 +98,8 @@ function insertRow(body, parks, i)
     {
         let parkVisit = document.createElement("a");
         parkVisit.href = parks[i].Visit;
-        parkVisit.innerHTML = '<img id="websiteIcon" alt="Website Link" class="" src="images/www.png">';
-        parkVisit.target = "_blank";
+        parkVisit.innerHTML = '<img id="websiteIcon" alt="Website Link" class="img-fluid" src="images/www.png">';
+        parkVisit.target = "rptTab";
         parkVisit.title = parks[i].Visit;
         cell4.appendChild(parkVisit);
     }
@@ -104,14 +109,52 @@ function insertRow(body, parks, i)
     }
 }
 
+/* 
+* This function clears the Table.
+*
+* @param table (HTML Element) - The Tours table element
+*/
+function clearTable(table)
+{
+    table.innerHTML = "";
+}
+
+/* 
+* This function display or hides National Park image.
+*
+* @param nationalParkImage (Image Element) - National Parks image
+* @param imgStatus (String) - "initial" or "none"
+*/
+function displayNationalPark(nationalParkImage, imgStatus)
+{
+    nationalParkImage.style.display = imgStatus;
+}
+
+/* 
+* This function displays or hides the Search by Location drop-down.
+*
+* @param locationStatus (String) - "initial" or "none"
+*/
+function displayLocationSelect(locationStatus)
+{
+    locationSelect.style.display = locationStatus;
+}
+
+/* 
+* This function displays or hides the Search by Park Type drop-down.
+*
+* @param parkTypeStatus (String) - "initial" or "none"
+*/
+function displayParkTypeSelect(parkTypeStatus)
+{
+    typeSelect.style.display = parkTypeStatus;
+}
+
 //Connect Events to HTML Elements
 window.onload = function ()
 {
-    const locationSelect = document.getElementById("locationSelect");
-    locationSelect.style.display = 'block';
-
-    const typeSelect = document.getElementById("typeSelect");
-    typeSelect.style.display = 'none';
+    displayLocationSelect("initial");
+    displayParkTypeSelect("none");
 
     const selectLocationField = document.getElementById("selectLocation");
 
@@ -119,7 +162,7 @@ window.onload = function ()
 
     const table = document.getElementById("parks");
 
-    const nationalParkPic = document.getElementById("outdoorsPic");
+    const nationalParkImage = document.getElementById("outdoorsImg");
 
     const searchByLocation = document.getElementById("searchByLocation");
 
@@ -130,20 +173,22 @@ window.onload = function ()
     // Search By Radio Buttons (By Location or By Park Type)
     searchByLocation.onclick = function ()
     {
-        typeSelect.style.display = 'none';
-        locationSelect.style.display = 'block';
+        displayParkTypeSelect("none");
+        displayLocationSelect("initial");
+        displayNationalPark(nationalParkImage, "initial");
+        clearTable(table);
+
         selectLocationField.value = "None";
-        table.innerHTML = "";
-        nationalParkPic.style.display = "block";
     }
 
     searchByParkType.onclick = function ()
     {
-        typeSelect.style.display = 'block';
-        locationSelect.style.display = 'none';
+        displayParkTypeSelect("initial");
+        displayLocationSelect("none");
+        displayNationalPark(nationalParkImage, "initial");
+        clearTable(table);
+
         selectParkField.value = "None";
-        table.innerHTML = "";
-        nationalParkPic.style.display = "block";
     }
 
     // Get all data from States JSON file and load location selection drop-down
@@ -165,12 +210,12 @@ window.onload = function ()
 
     // Get all data from Park Types array and load park type selection drop-down
     let parkTypes = [
-            { type: "National Park" }, { type: "National Monument" },
-            { type: "Recreation Area" }, { type: "Scenic Trail" },
-            { type: "Battlefield" }, { type: "Historic" }, { type: "Memorial" },
-            { type: "Preserve" }, { type: "Island" }, { type: "River" },
-            { type: "Seashore" }, { type: "Trail" }, { type: "Parkway" }
-        ]
+        { type: "National Park" }, { type: "National Monument" },
+        { type: "Recreation Area" }, { type: "Scenic Trail" },
+        { type: "Battlefield" }, { type: "Historic" }, { type: "Memorial" },
+        { type: "Preserve" }, { type: "Island" }, { type: "River" },
+        { type: "Seashore" }, { type: "Trail" }, { type: "Parkway" }
+    ]
 
     let parkTypesLength = parkTypes.length;
 
@@ -195,15 +240,13 @@ window.onload = function ()
             {
                 if (selectLocationField.value == "None")
                 {
-                    nationalParkPic.style.display = "block";
-
-                    table.innerHTML = "";
+                    displayNationalPark(nationalParkImage, "initial");
+                    clearTable(table);
                 }
                 else
                 {
-                    nationalParkPic.style.display = "none";
-
-                    table.innerHTML = "";
+                    displayNationalPark(nationalParkImage, "none");
+                    clearTable(table);
 
                     // Call Create Table Head Row Function
                     createHeadRow(table);
@@ -226,37 +269,24 @@ window.onload = function ()
             {
                 if (selectParkField.value == "None")
                 {
-                    nationalParkPic.style.display = "block";
-
-                    table.innerHTML = "";
+                    displayNationalPark(nationalParkImage, "initial");
+                    clearTable(table);
                 }
                 else
                 {
-                    nationalParkPic.style.display = "none";
-
-                    table.innerHTML = "";
+                    displayNationalPark(nationalParkImage, "none");
+                    clearTable(table);
 
                     // Call Create Table Head Row Function
                     createHeadRow(table);
 
                     let body = table.createTBody();
 
-                    let str = "";
+                    let regExp = new RegExp(selectParkField.value, "i");
 
-                    let locationCheck = "";
-
-                    let found = "";
-
-                    for (let i = 0; i < parksLength; i++)
+                    for (let i in objs.parks)
                     {
-                        str = selectParkField.value.toLowerCase();
-
-                        locationCheck = objs.parks[i].LocationName.toLowerCase();
-
-                        found = locationCheck.includes(str);
-
-                        // Call Insert Table Row Function
-                        if (found)
+                        if (regExp.exec(objs.parks[i].LocationName))
                         {
                             insertRow(body, objs.parks, i);
                         }
@@ -267,7 +297,7 @@ window.onload = function ()
             // Show All Button clicked
             showAllBtn.onclick = function ()
             {
-                table.innerHTML = "";
+                clearTable(table);
 
                 selectLocationField.value = "None";
                 selectParkField.value = "None";
@@ -282,6 +312,16 @@ window.onload = function ()
                 {
                     insertRow(body, objs.parks, i);
                 }
+            }
+
+            // Reset Button clicked
+            resetBtn.onclick = function ()
+            {
+                displayNationalPark(nationalParkImage, "initial");
+                clearTable(table);
+
+                selectLocationField.value = "None";
+                selectParkField.value = "None";
             }
         })
 }
